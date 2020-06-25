@@ -34,7 +34,9 @@ namespace AntiGravMovers.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Wood, 1);
+			recipe.AddRecipeGroup("AntiGravMovers:AnySilverBar", 10);
+			recipe.AddIngredient(ItemID.Emerald, 5);
+			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

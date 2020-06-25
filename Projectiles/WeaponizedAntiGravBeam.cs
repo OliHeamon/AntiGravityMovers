@@ -364,7 +364,7 @@ namespace AntiGravMovers.Projectiles
 		private void PulseComplete()
 		{
 			pulsing = false;
-			damage = Math.Min(damage << 1, 100000028);
+			damage = Math.Min((int)(damage * 1.25f), 100000028);
 			switch (mode)
 			{
 				case MODE_NPC:
